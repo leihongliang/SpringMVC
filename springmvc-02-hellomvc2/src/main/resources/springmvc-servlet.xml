@@ -4,9 +4,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!--处理器映射器-->
-    <!--<bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>-->
+    <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
     <!--处理器适配器-->
-    <!--<bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>-->
+    <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
 
     <!--视图解析器:DispatcherServlet给他的ModelAndView
     1.获取了ModelAndView的数据msg
@@ -21,5 +21,6 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-    <bean id="HelloController" name="/hello,/hello3" class="nuc.ss.controller.HelloController"/>
+<!--    <bean id="HelloController" name="/hello,/hello3" class="com.lei.controller.HelloController"/>-->
+    <bean id="/hello"  class="com.lei.controller.HelloController"/>
 </beans>
