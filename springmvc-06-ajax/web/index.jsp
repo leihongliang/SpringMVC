@@ -17,10 +17,10 @@
           url:"${pageContext.request.contextPath}/a1",
           data:{"name":$("#username").val()},
           success: function (data) {
-          //   console.log(data)
-          // },
-          // error:function (err) {
             alert(data)
+            //   console.log(data)
+          },
+          error:function (err) {
           }
         })
       }

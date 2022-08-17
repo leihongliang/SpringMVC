@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-@RestController
+@RestController//屏蔽视图解析器
 public class AjaxController {
     //
     @RequestMapping("/t1")
@@ -29,13 +29,13 @@ public class AjaxController {
     @RequestMapping("/a2")
     public List<User> a2() {
         List<User> userList = new ArrayList<User>();
-
         //增加数据
-        userList.add(new User("狂神说java",1,"男"));
-        userList.add(new User("狂神说前端",1,"女"));
-        userList.add(new User("狂神说运维",1,"女"));
+        userList.add(new User("雷hl1",1,"男"));
+        userList.add(new User("雷hl2",1,"女"));
+        userList.add(new User("雷hl3",1,"女"));
         return userList;
     }
+
     @RequestMapping("/a3")
     public String a3(String name,String pwd) {
         String msg = "";

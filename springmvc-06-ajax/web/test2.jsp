@@ -4,6 +4,7 @@
   Date: 2020/7/18 0018
   Time: 9:49
   To change this template use File | Settings | File Templates.
+  展示/a2的数据，就是一个list
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
@@ -33,6 +34,7 @@
     </script>
 </head>
 <body>
+
 <input type="button" value="加载数据" id="btn">
 <table>
     <thead>
@@ -46,5 +48,6 @@
         <%--数据：后台--%>
     </tbody>
 </table>
+
 </body>
 </html>

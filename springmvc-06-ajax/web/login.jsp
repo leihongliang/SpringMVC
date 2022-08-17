@@ -4,6 +4,7 @@
   Date: 2020/7/18 0018
   Time: 10:44
   To change this template use File | Settings | File Templates.
+  动态判断输入账号密码
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
@@ -24,7 +25,6 @@
                         $("#userInfo").css("color","red");
                     }
                     $("#userInfo").html(data);
-
                 }
             })
         }
